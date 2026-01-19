@@ -1,52 +1,57 @@
 *{
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
-
 }
+
+
 :root{
     --gradient:linear-gradient(45deg,rgb(243, 234, 60),rgb(224, 32, 150),rgb(182, 20, 227));
 }
 
-.inter-font {
-  font-family: "Inter", sans-serif;
+
+.inter-font{
+     font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+
+
 body{
-    width:1600px;
-
+    max-width: 1600px;
 }
-
-#navbar{
-    
+ 
+header{
     background-color: #1A0B2E;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content:space-between;
     align-items: center;
-    padding:0px 200px;
+    padding: 16px 200px 16px 200px;
+  
 }
-#navbar h1{
+header h2{
     color: #FFFFFF;
-    
+    font-size: 2.2rem;
 }
- .wave{
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:32px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.wave{
     background:var(--gradient);
     -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
  } 
-#navbar ul{
-    list-style: none;
-    display: flex;
-   gap:32px;
-   margin:36px 314px;
-}
 
-#navbar ul a{
-    text-decoration: none;
-    color:#FFFFFF;
-    font-size: 16px;
-}
 .btn1{
     padding: 12px 16px;
     display: flex;
@@ -63,30 +68,53 @@ body{
 .btn1 a{
     text-decoration: none;
     color:#FFFFFF;
-   
-       
-
 }
-ro-banner{
+
+.card-img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+}
+
+.main-area{
     position: relative;
 }
-
 .circle{
     position:absolute;
-    top:180px;
-    left:625px;
+    top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .microphn{
     position: absolute;
-    top: 270px;
-    left: 740px;
+    top:35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+.badge{
+  position: absolute;
+  top:15%;
+  left:57%;
+}
+.btn-badge{
+      color: #1A0B2E;
+      font-size:18px;
+      font-weight: 600;
+    background-color:#00FF88;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10000px;
+}
+
 .main-footerarea{
     position: absolute;
-    margin-top:-300px;
-    left: 525px;
+    top:75%;
+    left:50%;
     text-align: center;
+      transform: translate(-50%, -50%);
 }
+
+
 .hero-text h2{
     font-size: 60px;
     font-weight: bolder;
@@ -95,7 +123,10 @@ ro-banner{
 .hero-text p{
     font-size: 16px;
     color: #c3b6b6;
+    margin-top: 8px;
 }
+
+
 .main-btn{
     display: flex;
     justify-content:center;
@@ -136,6 +167,8 @@ ro-banner{
      font-size: 16px;
       font-weight: 600;
 }
+
+
 .menu-podcast{
     background-color: #1A0B2E;
     width:100%;
@@ -146,13 +179,14 @@ ro-banner{
      padding: 50px auto;
 }
 .podcast{
-    width:1200px;
+    
    padding:50px 200px 80px 200px;
     color: #FFFFFF;
     text-align: center;
    
     align-items: center;
 }
+
 .podcast h2{
     font-size: 48px;
     text-align: center;
@@ -165,15 +199,16 @@ ro-banner{
     line-height: 2;
 
 }
+
 .cards{
-    width:100%;
     background-color: #1A0B2E;
     padding:80px 200px 120px 200px;
     display: grid;
-    grid-template-columns: repeat(4, 240px);
+    grid-template-columns: repeat(4, 30%);
     justify-content: center;
     text-align: center;
 }
+
 .card h2{
     font-size: 48px;
     color:#00FF88;
@@ -183,18 +218,12 @@ ro-banner{
     color:#c3b6b6;
     margin-top: 16px;
 }
+
 #choose{
     padding: 120px 200px;
     background-color: #230E3D;
 }
 .container{
     display: grid;
-    grid-template-columns: ;
-}
-
-
-
-
-footer{
-    background: url(./assets/footer-bg.png);
+    grid-template-columns:repeat(1 20%) ,80% ;
 }
