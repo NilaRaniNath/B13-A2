@@ -168,7 +168,14 @@ body{
     font-weight: 600;
     border-radius: 10000px;
     background-image: linear-gradient(45deg,rgb(243, 234, 60),rgb(224, 32, 150),rgb(182, 20, 227));
+    animation:zoom 2s infinite ease-in-out;
 }
+@keyframes zoom {
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+   100% {transform:scale(1);}
+}
+
 .btn2 h6{
     color:#FFFFFF;
     font-size: 16px;
@@ -438,11 +445,11 @@ padding: 120px;
     font-size: 3.3rem;
 }
 .icon-links{
-    width: 100%;
+    align-items: center;
  display: grid;
  grid-template-columns: repeat(4,160px);
  justify-content: center;
- margin-left: 40px;
+ margin-left: 80px;
 
     
 }
@@ -496,13 +503,14 @@ padding: 120px;
          grid-template-columns:repeat(1, 1fr);
 
     }
+    
     .icon-links{
         grid-template-columns: repeat(2,160px);
     }
 
     .main-btn , .menu-podcast , .banner-card
     {
-        flex-direction: column;
+        flex-direction:column;
     }
     
     .main-area{
@@ -661,10 +669,12 @@ padding: 120px;
 .icons{
       margin-top: 0.5rem;
       margin-bottom: 0.6rem;
+
     
 }
+
 .last{
-    margin-top: 0.8rem;
+    margin-top: 1.8rem;
 
 }
 
