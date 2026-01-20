@@ -114,17 +114,9 @@ body{
   position: absolute;
   top:15%;
   left:57%;
-  animation:moveBox 1.5s infinite alternate;
 
 }
-@keyframes moveBox{
-    from{
-        transform:translateX(5px);
-    }
-    to{
-        transform:translateY(10px);
-    }
-}
+
 
 .btn-badge{
       color: #1A0B2E;
@@ -193,8 +185,15 @@ body{
     align-items: center;
     border:2px solid green;
     border-radius: 10000px;
+    animation: movebtn 3s infinite;
 
 }
+@keyframes movebtn {
+    0%{transform:translateY(5px);}
+    50%{transform:translateY(-5px);}
+   100% {transform:translateX(0);}
+}
+
 .btn3 h6{
      font-size: 16px;
       font-weight: 600;
@@ -512,11 +511,7 @@ padding: 120px;
     .card-img{
         width: 100%;
     }
-    /* .mble-circle{
-        width: 100px;
-        height: 100px;
-        
-    } */
+   
     .circle img{
         width:150px;
         height:130px;
@@ -536,6 +531,19 @@ padding: 120px;
     width: 35px;
     height:19px;
    }
+
+/* .badge{
+         animation:moveBox 2s infinite alternate;
+
+}
+@keyframes moveBox{
+    from{
+        transform:translateX(5px);
+    }
+    to{
+        transform:translateY(5px);
+    }
+} */
    .main-footerarea{
     width:400px;
     height: auto;
@@ -557,7 +565,7 @@ padding: 120px;
     margin-top: 3px;
 }
 .menu-podcast{
-    padding:60px 20px 40px 20px ;
+    padding:80px 40px 80px 40px ;
     margin-top: 60px;
 }
 .podcast{
@@ -575,12 +583,16 @@ padding: 120px;
 }
 #choose{
     width: 100%;
+    height: auto;
     padding: 40px 20px 40px 20px;
+}
+.container{
+    gap:16px;
 }
 .caption h2{
     font-size: 35px;
 }
-.box{
+.box {
     width: 100%;
     padding: 44px 24px;
 }
@@ -590,7 +602,7 @@ padding: 120px;
 }
 .box p{
     font-size:20px ;
-    line-height: 40px;
+    line-height: 30px;
 }
 .feature{
     padding: 40px 20px;
