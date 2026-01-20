@@ -27,26 +27,24 @@ body{
     opacity: 5;
     background-color: #2c322f;
 }
- 
-header{
-    background-color: #1A0B2E;
+ header{
+    
+    width:100%;
+     background-color: #1A0B2E;
+ }
+.header{
+   padding: 16px 200px 16px 200px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 16px 200px 16px 200px;
-    width:100%;
+  
 
   
 }
-/* .header-menu{
-    width:100%;
- background-color: #1A0B2E;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-      padding: 16px 200px 16px 200px;
-} */
-header h2{
+.mble-head{
+    display: none;
+}
+.header h2{
     color: #FFFFFF;
     font-size: 2.2rem;
 }
@@ -136,6 +134,8 @@ header h2{
     padding: 8px 16px;
     border: none;
     border-radius: 10000px;
+    box-shadow: 0px 0px 10px #00FF88;
+    
 }
 
 .main-footerarea{
@@ -148,12 +148,12 @@ header h2{
 
 
 .hero-text h2{
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: bolder;
     color: #FFFFFF;
 }
 .hero-text p{
-    font-size: 16px;
+    font-size: 1rem;
     color: #c3b6b6;
     margin-top: 8px;
 }
@@ -214,8 +214,7 @@ header h2{
    padding:50px 200px 80px 200px;
     color: #FFFFFF;
     text-align: center;
-   
-    align-items: center;
+   align-items: center;
 }
 
 .podcast h2{
@@ -232,8 +231,9 @@ header h2{
 }
 
 .cards{
+    width: 100%;;
     background-color: #1A0B2E;
-    padding:80px 200px 120px 200px;
+    padding:80px 200px 80px 200px;
     display: grid;
     grid-template-columns: repeat(4, 30%);
     justify-content: center;
@@ -422,7 +422,7 @@ iframe{
 
 footer{
     background-image: url(./assets/footer-bg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width:100%;
     background-repeat: none;
@@ -433,12 +433,12 @@ footer{
     text-align: center;
 justify-content: center;
 align-items: center;
-padding:120px 200px;
+padding: 120px;
 
 }
 .footer-area h1{
     color: #FFFFFF;
-    font-size: 55px;
+    font-size: 3.3rem;
 }
 .icon-links{
     display: flex;
@@ -458,4 +458,129 @@ padding:120px 200px;
     
 }
 
- 
+/* small device media query */
+
+@media screen and (max-width:576px){
+    body{
+        margin: 0;
+        padding: 0;
+       
+    }
+    .header{
+        display:none;
+    }
+
+
+    .mble-head{
+        margin:  14px 20px 14px 20px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 240px;
+    }
+    .mble-head h2{
+        color: #FFFFFF;
+    }
+   
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .similar .forth .first{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .container, 
+    .episodes{
+         grid-template-columns:repeat(1, 1fr);
+
+    }
+
+    .main-btn , .menu-podcast{
+        flex-direction: column;
+    }
+    .main-area{
+        width:100%;
+    }
+    .card-img{
+        width: 100%;
+    }
+    /* .mble-circle{
+        width: 100px;
+        height: 100px;
+        
+    } */
+    .circle img{
+        width:200px;
+        height:150px;
+        object-fit: contain;
+    }
+   .microphn img{
+    width:60px;
+        height:80px;
+
+   }
+   .btn-badge{
+    font-size:10px;
+    padding: 1px 2px;
+   }
+   .badge button{
+    width: 38px;
+    height:19px;
+   }
+   .main-footerarea{
+    width:400px;
+    height: auto;
+    margin-top: 60px;
+   }
+
+.hero-text h2{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+.hero-text p{
+    font-size: 8px;
+    text-align: center;
+    color: #c3b6b6;
+    margin-top: 2px;
+}
+.btn3{
+    margin-top: 3px;
+}
+.menu-podcast{
+    padding:40px 20px 40px 20px ;
+    margin-top: 60px;
+}
+.podcast{
+    width:400px;
+    padding: 0px 0px;
+}
+.podcast h2{
+    font-size:16px ;
+    text-align: center;
+}
+.cards{
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 80px 40px 80px; 
+}
+#choose{
+    width: 100%;
+    padding: 40px 20px 40px 20px;
+}
+.caption h2{
+    font-size: 40px;
+}
+.box{
+    width: 100%;
+    padding: 44px 24px;
+}
+.box h6{
+    font-size: 28px;
+    margin: 16px auto;
+}
+.box p{
+    font-size:20px ;
+    line-height: 40px;
+}
+} 
